@@ -1,0 +1,51 @@
+.app-frontpage {
+	@include make-container();
+  	@include make-container-max-widths();
+	padding: 0;
+}
+
+.app-intro {
+	@include make-row();
+	@include media-breakpoint-up(xl) {
+		margin-bottom: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+.app-intro-left {
+	@include make-col(12);
+	display: none;
+	@include media-breakpoint-up(xl) {
+		@include make-col(4);
+		display: block;
+	}
+	.app-intro-left-content {
+		padding: 0;
+		margin: 0;
+		height: 100%;
+		@include media-breakpoint-up(xl) {
+			margin: 0 1rem 0 0;
+		}
+
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.app-intro-right {
+	padding: 0;
+	@include make-col(12);
+	@include media-breakpoint-up(sm) {
+		padding: 1rem;
+	}
+	@include media-breakpoint-up(xl) {
+		@include make-col(8);
+		padding: 0;
+	}
+	.app-intro-right-content {
+		background: $app-gray-light;
+		padding: 1rem;
+	}
+}

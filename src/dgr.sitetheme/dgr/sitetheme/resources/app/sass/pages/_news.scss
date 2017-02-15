@@ -1,0 +1,123 @@
+// News
+
+.newsImage {
+  @extend.img-fluid;
+  //margin-bottom: 1rem;
+  width: 100%;
+}
+
+.newsImageContainer {
+  margin-bottom: 0;
+}
+
+.tileImage {
+  @extend .img-fluid;
+  float: left;
+}
+
+.portaltype-news-item {
+  .leadImage  {
+    display: none;
+  }
+}
+
+.app-page-title {
+    font-size: 1.2rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 2rem;
+    }
+  }
+
+.tileHeadline {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 2rem;
+    }
+
+}
+
+.option {
+  display: block;
+}
+.userrole-member {
+  margin-left: -60px !important;
+}
+
+// Listing
+
+.app-news-wrapper {
+  @include make-row();
+  //border-bottom: 1px solid $app-gray;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .app-news-left {
+    @include make-col(12);
+    padding: 0;
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+      padding: 0 1rem 0 1rem;
+    }  
+  }
+  .app-news-right {
+    @include make-col(12);
+    background: $app-gray-light;
+    padding: 1rem;
+    @include media-breakpoint-up(sm) {
+       @include make-col(6);
+      padding: 2rem;
+      background: $app-gray-light;
+    }  
+  }
+
+ ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  ol {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+  li:before {
+    content: "• ";
+    display: inline;
+  }
+}
+
+.app-summary-wrapper {
+  @include make-row();
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  //border-bottom: 1px solid $app-gray;
+  padding-top: 1rem;
+  //padding-bottom: 1rem;
+  .app-summary-left {
+    @include make-col(12);
+    padding: 0;
+    margin-bottom: 1rem;
+    @include media-breakpoint-up(sm) {
+        @include make-col(6);
+        margin-bottom: 0;
+        padding: 0 1rem 0 0;
+    }
+  }
+  .app-summary-right {
+    @include make-col(12);
+    padding: 2rem;
+    background: $app-gray-light;
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+  }
+}
+
+.back {
+  background: $app-primary;
+  border-color: $app-primary !important;
+  a {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

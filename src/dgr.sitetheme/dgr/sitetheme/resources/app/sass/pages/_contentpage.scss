@@ -1,0 +1,188 @@
+.app-page {
+  @include make-container();
+  @include make-container-max-widths();
+    padding: 1rem;
+    @include media-breakpoint-up(sm) {
+        margin-bottom: 1rem;
+    }
+    h1, h2, h3, h4, h5 {
+      text-transform: uppercase;
+      color: $app-gray;
+    }
+}
+
+.app-page {
+    @include media-breakpoint-up(sm) {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        @include when-inside('.template-search') {
+          margin-top: 1rem;
+        }
+    }
+    @include when-inside('.template-frontpage-view') {
+        background: transparent;
+    }
+}
+
+
+
+.app-page-headline,
+.app-page-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: $app-primary !important;
+  @include media-breakpoint-up(sm) {
+    margin-top: 0rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+    margin-top: 0rem;
+    @include when-inside('.template-frontpage-view') {
+        font-size: 2rem;
+    }
+  }
+}
+
+.app-page-abstract {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+// Lead image margin
+.app-page-leadimage {
+  margin-bottom: 2rem;
+}
+
+// DEPRECATED
+// Page image container
+.app-page-image-container {
+  margin-bottom: 0;
+}
+
+.app-page-text {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  ol {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+  //li:before {
+  //  content: "• ";
+  //  display: inline;
+  //}
+  a {
+    font-weight: 500;
+  }
+  h2 {
+    margin-top: 2rem;
+  }
+}
+
+.app-page-block {
+  @include make-row();
+}
+
+.app-page-block-content {
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+    padding: 1rem;
+  }
+}
+
+.app-page-block-3 {
+  @include make-row();
+  padding: 0 $spacer $spacer $spacer;
+}
+
+.app-page-block-content-3 {
+  @include make-col(12);
+  background: #fff;
+    padding: $spacer;
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    ul {
+      background: $app-gray;
+      padding: $spacer;
+      list-style: none;
+    }
+  @include media-breakpoint-up(sm) {
+    @include make-col(4);
+  }
+}
+
+.btn-primary {
+  background: $app-secondary;
+  border-color: $app-secondary !important;
+  color: #fff !important;
+}
+
+.btn-drz {
+  background: $app-secondary;
+  border-color: $app-secondary !important;
+  color: #fff !important;
+  &,
+  &:active,
+  &.active {
+      background: $app-secondary !important;
+    }
+}
+
+
+//
+// Content specific image and media styles
+//
+// Should be removed or refacored to use proper base classes
+// e.g. app-img
+// Note: classes can easily be changed using the diazo transform chain
+// or the tinymce configuration
+.app-img {
+  @extend .img-fluid;
+  width: 100%;
+}
+
+.image-inline {
+  @extend .img-fluid;
+}
+
+.image-left {
+  @extend .img-fluid;
+}
+
+// Responsive embeds
+.app-page-embed {
+  @extend .embed-responsive;
+  margin-bottom: 1rem;
+}
+
+// DEPRECATED
+// Should be replaced with the more generic
+// .app-page-embed class
+.embed-responsive {
+  margin-bottom: 1rem;
+}
+
+.info {
+  background: $app-gray-light;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+
+.project-gallery-item {
+  margin-bottom: 1rem;
+}

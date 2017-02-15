@@ -18,14 +18,14 @@ long_description = \
 setup(
     name='dgr.sitetheme',
     version='1.0.0',
-    description="Der Grüne Raum Website",
+    description="dgr Website",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
     ],
-    keywords='Plone Kreativkombinat',
+    keywords='plone dgr',
     author='Serge Davidov',
     author_email='sd@ade25.de',
     url='http://pypi.python.org/pypi/dgr.buildout',

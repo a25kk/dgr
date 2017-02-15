@@ -1,0 +1,170 @@
+//
+// Navbar
+// -----------------------------------------
+
+.app-navbar {
+    @include make-container();
+    @include make-container-max-widths();
+    @extend .navbar;
+    line-height: ($spacer / 2);
+    padding-left: 0;
+    padding-right: 0;
+    margin: 1rem 1rem 0 1rem;
+    @include media-breakpoint-up(sm) {
+        margin-top: 2rem;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: 1.5rem;
+    }
+}
+
+.app-navbar-brand {
+    padding-left: 1rem;
+}
+
+//== Navbar header
+//
+//## Default display of global site navigation
+//## Hidden on larger displays
+.app-navbar-header {
+    @include clearfix;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background: transparent;
+    @include media-breakpoint-up(sm) {
+        display: none;
+    }
+}
+
+.app-navbar-header-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.app-navbar-header-toggle {
+    float: right;
+}
+
+// Navbar toggle button visible on small displays
+// Custom override for
+.navbar-toggleable {
+    &-xs {
+        @include media-breakpoint-up(sm) {
+            display: block !important;
+        }
+    }
+    &-sm {
+        @include media-breakpoint-up(md) {
+            display: block !important;
+        }
+    }
+    &-md {
+        @include media-breakpoint-up(lg) {
+            display: block !important;
+        }
+    }
+}
+
+// Navbar toggle
+//
+// Custom button for toggling the `.navbar-collapse`, powered by the collapse
+// Bootstrap JavaScript plugin.
+
+.navbar-toggler {
+    padding: .5rem .75rem;
+    font-size: $font-size-lg;
+    line-height: 1;
+    background: none;
+    color: $app-secondary;
+    border: $border-width solid transparent;
+    @include border-radius($btn-border-radius);
+
+    @include hover-focus {
+        text-decoration: none;
+    }
+}
+
+
+.app-navbar-collapse {
+    //margin-left: -30px !important;
+    //margin-right: -30px !important;
+}
+
+// Unordered list main navigation
+.app-navbar-nav {
+    @extend .nav;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 1rem;
+    list-style: none;
+    @include media-breakpoint-up(sm) {
+        padding: 0;
+        flex-wrap: nowrap;
+    }
+    @extend .clearfix;
+    @include media-breakpoint-up(md) {
+        justify-content: space-between;
+    }
+}
+
+//== Navitems
+//
+//## Color coded based on addon classes
+.app-navitem {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+        //width: 16.66666667%;
+        width: auto;
+        @include media-breakpoint-up(lg) {
+            background: transparent;
+            padding-left: .8rem;
+            padding-right: .8rem;
+        }
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+
+.app-navitem-tab {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    padding-bottom: 0.7rem;
+    color: $app-gray;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1;
+    transition: background-color 0.5s ease;
+    font-size: 1rem;
+     @include media-breakpoint-up(lg) {
+        font-size: 1.1rem;
+     }
+    &:hover {
+        color: $app-primary-dark;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    > span {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+    @include media-breakpoint-up(md) {
+        display: flex;
+    }
+    @include when-inside('.active') {
+        color: $app-primary-dark;
+        background-color: transparent;
+        text-decoration: none;
+    }
+}

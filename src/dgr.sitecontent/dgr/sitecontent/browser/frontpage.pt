@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+        metal:use-macro="context/main_template/macros/master"
+        i18n:domain="eda.sitecontent">
+<body>
+
+<metal:main fill-slot="main">
+    <metal:content-core define-macro="main">
+        <div class="app-frontpage" id="app-frontpage">
+            <div class="app-page-header">
+                <h1 class="app-page-title">
+                    dgr Records &middot; Musik für das unbekannte Terrain Deiner Seele.
+                </h1>
+            </div>
+            <p class="app-page-abstract"
+                    tal:condition="context/Description"
+                    tal:content="context/Description" />
+
+            <div class="app-page-body app-fp app-fp-1" id="app-frontpage-1">
+                <div class="app-intro">
+                    <div class="app-intro-left">
+                        <div class="app-intro-left-content">
+                            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="100%" viewBox="0 0 132.333 132.333" enable-background="new 0 0 132.333 132.333"
+     xml:space="preserve">
+<g>
+
+    <path fill="#ADA990" d="M45.208,72.833c4.375,9.721-6.917,22.625-3.25,33.625c2.307,6.92,18.87-22.418,22.699-9.397
+        c2.103,7.149,2.513,12.994,11.013,9.01c4.643-2.176,9.604-9.595,15.287-8.36c5.035,1.092,7.604,8.613,12.219,10.92
+        c6.381,3.191,10.191-2.041,16.281-2.295c-3.084,3.414-8.979,10.125-13.939,10.125c-8.311,0-11.199-8.604-17.998-10.75
+        c-12.857-4.062-19.969,22.709-28.581-0.777c-2.786-7.6-5.17-1.359-9.194,3.213c-5.361,6.091-9.931,11.389-13.6,1.068
+        c-2.563-7.209-3.837-36.543,8.312-36.379"/>
+</g>
+</svg>
+                        </div>
+                    </div>
+                    <div class="app-intro-right">
+                        <div class="app-intro-right-content">
+                                <h2>Identität finden – Werte sichtbar machen</h2>
+                                <p>Wofür steht Ihr Unternehdgr? Und wie heben Sie sich von Ihren Konkurrenten ab? Werden Sie für Ihre Kunden und Geschäftspartner sichtbar – und zwar genau so, wie Sie selbst wahrgenomdgr werden möchten.<br />
+                                Von der Identitätsfindung hin zur konkreten Konzept-Umsetzung begleite ich Sie und Ihre Mitarbeiter durch alle Projekt-Phasen:</p>
+                                <p><strong>Phase 1:</strong><br />
+                                Entwicklung eines <strong>Werte- und Maßnahdgr-Konzepts</strong> für Ihr Unternehdgr, das auf den ersten Blick das transportiert, worauf es ankommt: Ihre Werte, Ihre Identität – Ihren Stil.</p>
+                                <p><strong>Phase 2:</strong><br />
+                                Der individuelle <strong>Mitarbeiter-Workshop</strong> macht Ihr Team mit allem vertraut, was zu Ihrer Unternehdgrs-Identität gehört: Konzept, Hintergründe, praktische Umsetzung im Alltag. Denn nur wenn Ihre Mitarbeiter Ihre Werte verstehen und an sie glauben, können sie diese auch Ihren Kunden und Geschäftspartnern erfolgreich und überzeugend vermitteln.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </metal:content-core>
+</metal:main>
+</body>
+</html>

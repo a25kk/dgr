@@ -1,0 +1,48 @@
+//
+// Application settings and variables
+// -------------------------------------------------
+
+
+//== Colors
+//
+//## Brand colors used across the project
+$color-Gray60:               	rgba(153,153,153,1) !default; // #999999
+
+$color-Black:               	rgba(0,0,0,1) !default; // #000000
+
+
+// Gray baseline
+$app-gray:                      rgba(102, 102, 102, 1);
+$app-gray-light:                rgba(239, 239, 239, 1); // #efefef
+
+$app-red:                       rgba(204, 0, 0, 1);
+
+//== Brand and Section specific variables
+//
+//## Used in mixin and modifier classes
+
+//** Primary brand color
+$app-primary-base:              $color-Gray60 !default;
+$app-primary-darker:            darken($app-primary-base, 15%)  !default;
+$app-primary-dark:              darken($app-primary-base, 7.5%) !default;
+$app-primary:                   $app-primary-base               !default; // #999999
+$app-primary-light:             lighten($app-primary-base, 7.5%) !default;
+$app-primary-lighter:           lighten($app-primary-base, 15%) !default;
+
+//** Secondary brand color
+$app-secondary-base:              $color-Black !default;
+$app-secondary-darker:            darken($app-secondary-base, 15%)  !default;
+$app-secondary-dark:              darken($app-secondary-base, 7.5%) !default;
+$app-secondary:                   $app-secondary-base               !default; // #000000
+$app-secondary-light:             lighten($app-secondary-base, 7.5%) !default;
+$app-secondary-lighter:           lighten($app-secondary-base, 15%) !default;
+
+
+//** Brand primary color schema used as default
+$app-default:                 $app-primary-base;
+
+// Brand danger
+$app-danger:                    $app-red;
+
+// Ionicons
+$ionicons-font-path:            "../assets/fonts";

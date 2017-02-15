@@ -1,0 +1,62 @@
+// Footer
+
+.app-footer {
+    margin-top: 1rem;
+}
+
+.app-footer-content {
+    background: url(../assets/img/footer.jpg) no-repeat 0 50%;
+    background-size: cover;
+    color: $app-gray;
+    font-size: $font-size-sm;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.app-footer-cards {
+    @extend .container;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+// Highlight panel header
+.app-footer-header {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+
+.app-footer-link {
+    color: #fff;
+    &:hover {
+        color: darken(#fff, 6.5%);
+    }
+}
+
+
+// Social icon anchors
+.app-social-icon {
+    display: inline-block;
+    @include size(2.5rem, 2.5rem);
+    margin-right: 0.5rem;
+    border: 1px solid $gray-lighter;
+    border-radius: 50%;
+    color: $gray-lighter;
+    line-height: 2.5rem;
+    text-align: left;
+    &:hover {
+        color: lighten($gray-lighter, 6.5%);
+    }
+}
+
+.app-copyright {
+    @extend .container;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1rem;
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+}

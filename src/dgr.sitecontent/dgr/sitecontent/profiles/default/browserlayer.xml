@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="dgr.sitecontent"
+    interface="dgr.sitecontent.interfaces.IDgrSitecontentLayer"
+  />
+</layers>

@@ -15,7 +15,7 @@ from plone.testing import z2
 import unittest2 as unittest
 
 
-class DgrSiteThemeLayer(PloneSandboxLayer):
+class dgrSiteThemeLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
@@ -46,11 +46,11 @@ class DgrSiteThemeLayer(PloneSandboxLayer):
         z2.uninstallProduct(app, 'dgr.sitetheme')
 
 
-FIXTURE = DgrBuildoutLayer()
+FIXTURE = dgrBuildoutLayer()
 INTEGRATION_TESTING = IntegrationTesting(
-    bases=(FIXTURE,), name="DgrBuildoutLayer:Integration")
+    bases=(FIXTURE,), name="dgrBuildoutLayer:Integration")
 FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(FIXTURE,), name="DgrBuildoutLayer:Functional")
+    bases=(FIXTURE,), name="dgrBuildoutLayer:Functional")
 
 
 class IntegrationTestCase(unittest.TestCase):

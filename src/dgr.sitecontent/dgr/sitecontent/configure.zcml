@@ -1,0 +1,38 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="dgr.sitecontent">
+
+    <!-- Include configuration for dependencies listed in setup.py -->
+    <includeDependencies package="." />
+
+    <include package=".browser" />
+    <include package=".behaviors" />
+
+    <!-- Register locales directory -->
+    <i18n:registerTranslations directory="locales" />
+
+    <!-- Register the installation GenericSetup extension profile -->
+    <genericsetup:registerProfile
+        name="default"
+        title="dgr.sitecontent"
+        directory="profiles/default"
+        description="Extension profile for dgr.sitecontent."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <plone:static
+        directory="resources"
+        type="theme"
+    />
+
+    <utility
+        provides="dgr.sitecontent.interfaces.IResponsiveImagesTool"
+        factory="dgr.sitecontent.imagetool.ResponsiveImagesTool"
+        />
+
+</configure>
