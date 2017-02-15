@@ -1,0 +1,2 @@
+graft dgr
+include *.cfg *.rst *.in
