@@ -41,7 +41,7 @@
     }
     &.app-header-brandbar {
         @include media-breakpoint-up(sm) {
-            @include make-col(4);
+            @include make-col(12);
         }
         min-height: 50px;
     }

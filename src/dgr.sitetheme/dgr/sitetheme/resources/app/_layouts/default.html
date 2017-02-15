@@ -10,10 +10,20 @@
     {% include layout/header.html %}
 
     <main class="app-main" role="main">
-          {{ content }}
+        <section class="app-content">
+            <aside class="app-content-aside" id="app-content-aside">
+                {% include layout/sidebar.html %}
+            </aside>
+            <article class="app-content-main" id="app-content-main">
+                {{ content }}
+                {% include components/frontpage-cards.html %}
+            </article>
+        </section>
     </main>
 
     {% include layout/footer.html %}
     {% include base/javascript.html %}
   </body>
 </html>
+
+
