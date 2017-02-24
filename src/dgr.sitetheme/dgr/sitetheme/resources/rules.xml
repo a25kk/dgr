@@ -323,12 +323,8 @@
         </replace>
 
         <!-- Navtree -->
-        <!-- Uses card semantics throughout the template -->
-        <replace css:content=".portletNavigationTree" css:if-not-content=".template-overview-controlpanel">
+         <replace css:content=".portletNavigationTree" css:if-not-content=".template-overview-controlpanel">
             <div class="app-card app-card-nav app-nav-list">
-                <div class="app-card-header">
-                    Navigation
-                </div>
                 <div class="app-card-main">
                     <nav class="app-nav-tree">
                         <xsl:for-each css:select=".portletContent > *">
@@ -346,13 +342,13 @@
                                     <xsl:attribute name="class"><xsl:value-of select="./@class" /> app-nav-list-item</xsl:attribute>
                                 </xsl:if>
                                 <xsl:for-each css:select=".navTreeItem">
-                                    <li class="app-nav-list-item">
-                                        <a class="app-nav-list-link">
-                                            <xsl:copy-of select="./a/@*[local-name() != 'class']"/>
-                                            <xsl:attribute name="class"><xsl:value-of select="./@class" /> app-nav-list-link</xsl:attribute>
-                                            <xsl:copy-of select="./a/text()" />
-                                        </a>
-                                    </li>
+                                  <li class="app-nav-list-item">
+                                    <a class="app-nav-list-link">
+                                        <xsl:copy-of select="./a/@*[local-name() != 'class']"/>
+                                       <xsl:attribute name="class"><xsl:value-of select="./@class" /> app-nav-list-link</xsl:attribute>
+                                       <xsl:copy-of select="./a/text()" />
+                                    </a>
+                                  </li>
                                 </xsl:for-each>
                             </ul>
                         </xsl:for-each>
@@ -361,29 +357,42 @@
             </div>
         </replace>
 
-        <!-- Fix for navigation portlet styles used inside the control panel overview -->
-        <replace css:content=".portletNavigationTree" css:if-content=".template-overview-controlpanel">
-            <div class="app-card">
-                <xsl:for-each css:select=".portlet > *">
-                    <div>
-                        <xsl:if test="@class[contains(.,'portletHeader')]">
-                            <xsl:attribute name="class">app-card-header</xsl:attribute>
-                        </xsl:if>
-                        <xsl:if test="@class[contains(.,'portletContent')]">
-                            <xsl:attribute name="class">app-card-main-plain</xsl:attribute>
-                        </xsl:if>
-                        <xsl:if test="@class[contains(.,'portletFooter')]">
-                            <xsl:attribute name="class">app-card-footer</xsl:attribute>
-                        </xsl:if>
-                        <xsl:copy-of select="node()"/>
-                    </div>
-                </xsl:for-each>
+        <replace css:content=".portlet" css:if-content=".portletNavigationTree">
+            <div class="app-card app-card-nav app-nav-list">
+                <div class="app-card-main">
+                    <nav class="app-nav-tree">
+                        <xsl:for-each css:select=".portletContent > *">
+                            <ul class="app-nav-tree-list">
+                                <xsl:if test="@class[contains(.,'navTreeLevel0')]">
+                                    <xsl:attribute name="class">app-nav-list app-nav-level-0</xsl:attribute>
+                                </xsl:if>
+                                <xsl:if test="@class[contains(.,'navTreeLevel1')]">
+                                    <xsl:attribute name="class">app-nav-list app-nav-level-1</xsl:attribute>
+                                </xsl:if>
+                                <xsl:if test="@class[contains(.,'navTreeLevel2')]">
+                                    <xsl:attribute name="class">app-nav-list app-nav-level-2</xsl:attribute>
+                                </xsl:if>
+                                <xsl:if test="@class[contains(.,'navTreeItem')]">
+                                    <xsl:attribute name="class"><xsl:value-of select="./@class" /> app-nav-list-item</xsl:attribute>
+                                </xsl:if>
+                                <xsl:copy-of select="node()" />
+                            </ul>
+                        </xsl:for-each>
+                    </nav>
+                </div>
             </div>
         </replace>
-
-        <!-- Portlets-->
-        <replace css:content=".portlet:not(.portletNavigationTree)">
+        <!--  transform all portlets  -->
+        <replace css:content=".portlet" css:if-not-content=".portletNavigationTree">
             <div class="app-card">
+                <xsl:choose>
+                    <xsl:when css:test=".portletNavigationTree">
+                        <xsl:attribute name="class">app-card app-card-nav app-nav-list</xsl:attribute>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:attribute name="class">app-card app-card-default</xsl:attribute>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:for-each css:select=".portlet > *">
                     <div>
                         <xsl:if test="@class[contains(.,'portletHeader')]">
@@ -400,7 +409,6 @@
                 </xsl:for-each>
             </div>
         </replace>
-
 
     </rules>
 
