@@ -142,7 +142,7 @@ $card-title-spacers: (
     color: #fff;
     &-plain {
         padding-top: .5rem;
-        background: $gray-light;
+        background: $gray-300;
     }
 }
 
@@ -297,8 +297,8 @@ $card-title-spacers: (
     @include size(4rem);
     padding-top: 0.5rem;
     border-radius: 50%;
-    border: 1px solid $gray-lighter;
-    color: $gray-lighter;
+    border: 1px solid $gray-300;
+    color: $gray-300;
     font-size: 2rem;
 }
 

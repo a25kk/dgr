@@ -40,13 +40,13 @@
     display: inline-block;
     @include size(2.5rem, 2.5rem);
     margin-right: 0.5rem;
-    border: 1px solid $gray-lighter;
+    border: 1px solid $gray-300;
     border-radius: 50%;
-    color: $gray-lighter;
+    color: $gray-300;
     line-height: 2.5rem;
     text-align: left;
     &:hover {
-        color: lighten($gray-lighter, 6.5%);
+        color: lighten($gray-300, 6.5%);
     }
 }
 

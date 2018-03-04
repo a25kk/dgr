@@ -1,4 +1,5 @@
 // Core variables and mixins
+@import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 
 @import "bootstrap-variables.scss";
@@ -6,7 +7,6 @@
 @import "bootstrap/scss/mixins";
 
 // // Reset and dependencies
-@import "bootstrap/scss/normalize";
 @import "bootstrap/scss/print";
 
 // Core CSS
@@ -20,14 +20,14 @@
 @import "bootstrap/scss/buttons";
 
 // // Components
-//@import "bootstrap/scss/animation";
-@import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/animation";
+// @import "bootstrap/scss/dropdown";
 @import "bootstrap/scss/button-group";
 @import "bootstrap/scss/input-group";
 @import "bootstrap/scss/custom-forms";
 @import "bootstrap/scss/nav";
-@import "bootstrap/scss/navbar";
-@import "bootstrap/scss/card";
+// @import "bootstrap/scss/navbar";
+// @import "bootstrap/scss/card";
 @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/labels";
@@ -36,7 +36,7 @@
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/media";
 // @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/responsive-embed";
+// @import "bootstrap/scss/responsive-embed";
 // @import "bootstrap/scss/close";
 
 // Components w/ JavaScript
