@@ -20,7 +20,9 @@
 }
 
 .app-content-aside {
-    @include media-breakpoint-up(md) {
+  display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
         @include make-col(3);
         padding: 0 1rem 1rem 0rem;
     }
@@ -30,7 +32,7 @@
   background: #fff;
   padding: 1rem;
   &-sm {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       @include make-col(9);
     }
   }
@@ -38,7 +40,7 @@
 
 .app-content-main-full {
   @include make-col(12);
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         @include make-col(12);
         padding: 0 1rem 0 0;
     }

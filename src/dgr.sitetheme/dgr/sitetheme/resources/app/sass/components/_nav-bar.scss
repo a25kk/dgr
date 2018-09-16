@@ -33,7 +33,7 @@
 .app-nav-bar__header {
     display: flex;
     margin-bottom: 1rem;
-    background: #000;
+    background: $app-primary;
     color: #fff;
     @include media-breakpoint-up(lg) {
         display: none;
@@ -157,7 +157,7 @@
     text-transform: none;
     font-weight: 700;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 1rem;
     @include media-breakpoint-up(md) {
         text-transform: uppercase;
         padding: 1rem .5rem;
@@ -200,11 +200,11 @@
     display: inline-block;
     width: 100%;
     padding: 1rem;
-    &:after {
-        content: "▾";
-        padding-left: .5rem;
-        font-size: 1rem;
-        }
+    //&:after {
+    //    content: "▾";
+    //    padding-left: .5rem;
+    //    font-size: 1rem;
+    //    }
         @include when-inside('.app-nav__link--has-icon') {
             display: block;
         @include media-breakpoint-up(lg) {

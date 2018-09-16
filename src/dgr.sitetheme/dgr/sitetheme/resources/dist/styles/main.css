@@ -15714,7 +15714,7 @@ body.template-frontpage-view .app-pathbar {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem;
-  background: #000;
+  background: #507378;
   color: #fff;
 }
 
@@ -15852,7 +15852,7 @@ body.template-frontpage-view .app-pathbar {
   text-transform: none;
   font-weight: 700;
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -15901,12 +15901,6 @@ body.template-frontpage-view .app-pathbar {
   display: inline-block;
   width: 100%;
   padding: 1rem;
-}
-
-.app-nav__tab:after {
-  content: "▾";
-  padding-left: .5rem;
-  font-size: 1rem;
 }
 
 .app-nav__link--has-icon .app-nav__tab {
@@ -16580,8 +16574,13 @@ body.template-frontpage-view .app-pathbar {
   max-width: 100%;
 }
 
-@media (min-width: 768px) {
+.app-content-aside {
+  display: none;
+}
+
+@media (min-width: 992px) {
   .app-content-aside {
+    display: block;
     -ms-flex: 0 0 25%;
         flex: 0 0 25%;
     max-width: 25%;
@@ -16594,7 +16593,7 @@ body.template-frontpage-view .app-pathbar {
   padding: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .app-content-main-sm {
     -ms-flex: 0 0 75%;
         flex: 0 0 75%;
@@ -16608,7 +16607,7 @@ body.template-frontpage-view .app-pathbar {
   max-width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .app-content-main-full {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
