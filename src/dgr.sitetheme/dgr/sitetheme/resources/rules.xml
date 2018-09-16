@@ -437,7 +437,7 @@
             </ul>
         </replace>
 
-        <!-- Navtree 
+        <!-- Navtree -->
         <replace css:content=".portletNavigationTree" css:if-not-content=".template-overview-controlpanel">
             <xsl:call-template name="nav-tree" />
         </replace>
@@ -452,7 +452,7 @@
         </replace>
         <replace css:content=".navTreeItem > a">
             <xsl:call-template name="nav-tree-link" />
-        </replace> -->
+        </replace> 
 
         <!-- Portlets-->
         <replace css:content=".portletNavigationTree" css:if-content=".template-overview-controlpanel">

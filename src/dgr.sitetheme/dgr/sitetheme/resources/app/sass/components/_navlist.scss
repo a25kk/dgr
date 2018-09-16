@@ -4,13 +4,19 @@
 
 
 .app-nav-tree {
-    background-color: $app-secondary;
+    //display: none;
+    background-color: transparent;
+    font-weight: 500;
 }
 
 
-.app-nav-list {
+.app-nav__list {
     padding-left: 0;
     list-style: none;
+    &--level-1,
+    &--level-2 {
+        margin-left: .5rem;
+    }
 }
 
 .app-nav-tree-list {
@@ -21,114 +27,79 @@
     }
 }
 
-.app-nav-list-item {
+.app-nav__list-item {
+    text-transform: uppercase;
     margin-left: 0;
     padding: .5rem .25rem;
     &:not(last) {
-        margin-bottom: .25rem;
-        border-bottom: 1px solid #fff;
+        //margin-bottom: .25rem;
+        border-bottom: .5rem solid $gray-200;
     }
+    &:last-of-type {
+        border-bottom: 0px;
+    }
+
 }
 
-.app-nav-list-link {
-    color: #fff;
+
+.app-nav__list-link {
+    padding: 1rem;
+    line-height: 2rem;
+    color: #000;
     &:hover {
-        color: darken(#fff, 10%);
+        color: darken($app-primary, 10%);
     }
     &.navTreeCurrentNode {
-        color: $gray-300;
+        color: $app-gray;
     }
 }
 
-// DEPRECATED 13.01.2015:
-// Use diazo transforms to cleanup the standard navtree portlet
-// This should allow for better control
-.app-nav-list,
-.navTree {
-    padding-left: 0;
-    list-style: none;
+.app-nav__list-link--open {
+    color: #fff;
 }
 
-.app-nav-list {
-  .app-card-main {
-    padding: 0;
-  }
+.app-nav__list-link--active {
+    color: #fff;
 }
 
-.navTreeItem {
+.app-nav__list--level-0 {
+    margin-bottom: 0;
+    .app-nav__list-item {
+        background-color: $app-secondary;
+        padding: 0rem;
+    }
+
+    .app-nav__list-item--active {
+        background-color: $app-primary !important;
+        .app-nav__list-link--active {
+            //line-height: 3rem;
+            }
+        }
+}
+
+.app-nav__list--level-1 {
     margin-left: 0;
-    > a {
-      display: block;
-      text-decoration: none;
-        color: #fff;
-        border-bottom: 10px solid #eeeeee;
+    .app-nav__list-item {
+        background-color: #fff;
+        text-transform: none !important;
         padding: 1rem;
-        margin: 0;
-        background: $app-secondary;
-        &:hover,
-      &:focus {
-        color: #fff;
-        background: $app-primary-dark;
-      }
+    }
+    .app-nav__list-link--active {
+    color: #fff;
+    }
+
+    .app-nav__list-link {
+        padding: 0;
     }
 }
 
-.navTreeCurrentItem {
-    color: #fff;
-    background: $app-primary-darker !important;
+
+.app-nav__list--level-2 {
+    //border: 1px solid red;
 }
 
-.navTreeItemInPath {
-    color: #fff;
-    background: $app-primary;
-}
-
-.navTreeCurrentNode {
-    background: $app-primary-lighter;
-}
-
-.navTreeItem .navTreeLevel0 li a:link {
-    font-size: 1.5rem;
-}
-
-.app-nav-level-0 {
-    text-transform: uppercase;
-}
-
-.navTreeLevel1 {
-    margin-left: 0;
-    padding-left: 0;
-    text-transform: none;
-}
-
-.navTreeItem .navTreeLevel1 li a:link {
-    padding-left: 1rem;
-    font-size: 0.8rem;
-}
-
-.navTreeLevel2 {
-    margin-left: 0px;
-}
-
-.navTreeItem .navTreeLevel2 li a:link {
-    padding-left: 1rem;
-    font-size: 0.8rem;
-}
-
-.navTreeLevel3 {
-    margin-left: 0px;
-}
-
-.navTreeItem .navTreeLevel3 li a:link {
-    padding-left: 6rem;
-    font-size: 0.8rem;
-}
-
-.navTreeItem .navTreeLevel4 li a:link {
-    padding-left: 8rem;
-    font-size: 0.8rem;
-}
-
-.image-icon {
-    display: none;
+ul .portletItem {
+    list-style: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid $gray-600;
 }
