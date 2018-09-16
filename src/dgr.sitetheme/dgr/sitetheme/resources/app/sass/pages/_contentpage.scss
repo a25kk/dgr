@@ -30,7 +30,7 @@
 .app-page-title,
 .app-page__headline {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 1rem;
   text-transform: uppercase;
@@ -40,11 +40,8 @@
   }
 
   @include media-breakpoint-up(lg) {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 0rem;
-    @include when-inside('.template-frontpage-view') {
-        font-size: 2rem;
-    }
   }
 }
 
@@ -68,7 +65,8 @@
   margin-bottom: 0;
 }
 
-.app-page-text {
+.app-page-text,
+#parent-fieldname-text {
   ul {
     list-style: none;
     padding-left: 0;
@@ -84,8 +82,13 @@
   a {
     font-weight: 500;
   }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
   h2 {
-    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 }
 

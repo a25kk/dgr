@@ -7,6 +7,10 @@
     @include when-inside('.template-search') {
         display: none;
     }
+
+    @include when-inside('.section-osteopathie-feldenkrais-yoga-augsburg') {
+        display: none;
+    }
     @extend .container;
     margin-top: 0;
     font-size: $font-size-sm;
