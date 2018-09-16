@@ -27,7 +27,8 @@
 
 
 .app-page-headline,
-.app-page-title {
+.app-page-title,
+.app-page__headline {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 1rem;
@@ -47,9 +48,13 @@
   }
 }
 
-.app-page-abstract {
-  text-transform: uppercase;
+.app-page-abstract,
+.app-page__abstract {
+  text-transform: none;
   font-size: 1.2rem;
+  background: $app-secondary;
+  padding: 1rem;
+  color: #fff;
 }
 
 // Lead image margin
