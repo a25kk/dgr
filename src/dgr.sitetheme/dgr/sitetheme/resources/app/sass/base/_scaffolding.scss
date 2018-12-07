@@ -5,6 +5,7 @@
 
 //** Adjust font weight for initialized webfonts
 body {
+    line-height: 1.6rem;
     background-color: #eee;
     overflow-x: hidden;
     @include when-inside('.fonts--loaded') {
@@ -35,6 +36,10 @@ strong {
 }
 
 // Transistion link color on :hover state
+
+a {
+    color: #6eb040;
+}
 a:hover {
     transition: color 0.5s linear;
     color: #000;

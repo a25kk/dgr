@@ -44,8 +44,8 @@
 
 .app-nav__list-link {
     padding: 1rem;
-    line-height: 2rem;
-    color: #000;
+    line-height: 3rem;
+    color: $gray-700;
     &:hover {
         color: darken($app-primary, 10%);
     }
@@ -83,6 +83,7 @@
         background-color: #fff;
         text-transform: none !important;
         padding: 1rem;
+        border-bottom: 0;
     }
     .app-nav__list-link--active {
     color: #fff;
@@ -90,6 +91,7 @@
 
     .app-nav__list-link {
         padding: 0;
+        line-height: 1rem;
     }
 }
 

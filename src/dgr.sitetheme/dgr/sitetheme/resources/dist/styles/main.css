@@ -13480,6 +13480,7 @@ https://flickity.metafizzy.co
 }
 
 body {
+  line-height: 1.6rem;
   background-color: #eee;
   overflow-x: hidden;
 }
@@ -13509,6 +13510,10 @@ strong {
 .font__primary--loaded b, .font__primary--loaded
 strong {
   font-weight: 600;
+}
+
+a {
+  color: #6eb040;
 }
 
 a:hover {
@@ -15271,8 +15276,8 @@ body.template-frontpage-view .app-pathbar {
 
 .app-nav__list-link {
   padding: 1rem;
-  line-height: 2rem;
-  color: #000;
+  line-height: 3rem;
+  color: #495057;
 }
 
 .app-nav__list-link:hover {
@@ -15312,6 +15317,7 @@ body.template-frontpage-view .app-pathbar {
   background-color: #fff;
   text-transform: none !important;
   padding: 1rem;
+  border-bottom: 0;
 }
 
 .app-nav__list--level-1 .app-nav__list-link--active {
@@ -15320,6 +15326,7 @@ body.template-frontpage-view .app-pathbar {
 
 .app-nav__list--level-1 .app-nav__list-link {
   padding: 0;
+  line-height: 1rem;
 }
 
 ul .portletItem {
@@ -15964,6 +15971,10 @@ fieldset[disabled] a.button {
   background: transparent;
 }
 
+.app-page td {
+  padding: 1rem;
+}
+
 .app-page-headline,
 .app-page-title,
 .app-page__headline {
@@ -15987,7 +15998,7 @@ fieldset[disabled] a.button {
   .app-page-headline,
   .app-page-title,
   .app-page__headline {
-    font-size: 2rem;
+    font-size: 1.6rem !important;
     margin-top: 0rem;
   }
 }
@@ -15995,10 +16006,8 @@ fieldset[disabled] a.button {
 .app-page-abstract,
 .app-page__abstract {
   text-transform: none;
-  font-size: 1.2rem;
-  background: #95cc6e;
-  padding: 1rem;
-  color: #fff;
+  font-size: 1rem;
+  color: #adb5bd;
 }
 
 .app-page-leadimage {
@@ -16028,14 +16037,17 @@ fieldset[disabled] a.button {
 
 .app-page-text h1,
 #parent-fieldname-text h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.6rem;
 }
 
 .app-page-text h2,
 #parent-fieldname-text h2 {
+  font-size: 1.4rem;
+}
+
+.app-page-text h3,
+#parent-fieldname-text h3 {
   font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .app-page-block {
