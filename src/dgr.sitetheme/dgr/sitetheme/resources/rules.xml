@@ -77,6 +77,9 @@
     <theme href="dist/signin/index.html" css:if-content="body.template-pwreset_form" />
     <theme href="dist/signin/index.html" css:if-content="body.template-pwreset_finish" />
     <theme href="dist/frontpage/index.html" css:if-content="body.template-frontpage-view" />
+    <theme href="dist/nl-yoga/index.html" css:if-content="body.subsection-feldenkrais-newsletter" />
+
+    
 
     <!--<theme href="dist/frontpage/index.html" css:if-content="body.template-frontpage-view" />-->
 
