@@ -13619,8 +13619,8 @@ iframe {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: left;
   width: 100%;
 }
@@ -13651,8 +13651,8 @@ iframe {
 
 @media (min-width: 992px) {
   .app-header__section {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
     background: transparent;
   }
 }
@@ -14623,7 +14623,7 @@ img[data-sizes="auto"] {
   display: none;
 }
 
-.section-osteopathie-feldenkrais-yoga-augsburg .app-pathbar {
+.section-front-page .app-pathbar {
   display: none;
 }
 
@@ -14647,9 +14647,15 @@ img[data-sizes="auto"] {
 
 .app-pathbar ol {
   display: inline-block;
-  padding: 1rem;
+  padding: 1rem 2rem;
   list-style: none;
   margin: 0;
+}
+
+@media (min-width: 992px) {
+  .app-pathbar ol {
+    padding: 1rem 0;
+  }
 }
 
 .app-pathbar ol > li {
@@ -15153,20 +15159,32 @@ body.template-frontpage-view .app-pathbar {
 }
 
 .app-gallery {
-  height: 210px;
+  height: 213px;
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
+@media (min-width: 576px) {
+  .app-gallery {
+    height: 315px;
+  }
+}
+
 @media (min-width: 768px) {
   .app-gallery {
-    height: 340px;
+    height: 435px;
   }
 }
 
 @media (min-width: 992px) {
   .app-gallery {
-    height: 540px;
+    height: 360px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-gallery {
+    height: 464px;
   }
 }
 
@@ -15196,19 +15214,31 @@ body.template-frontpage-view .app-pathbar {
 
 .app-gallery-cell {
   width: 100%;
-  height: 210px;
+  height: 213px;
   overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  .app-gallery-cell {
+    height: 315px;
+  }
 }
 
 @media (min-width: 768px) {
   .app-gallery-cell {
-    height: 340px;
+    height: 435px;
   }
 }
 
 @media (min-width: 992px) {
   .app-gallery-cell {
-    height: 540px;
+    height: 360px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-gallery-cell {
+    height: 464px;
   }
 }
 

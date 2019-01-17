@@ -250,7 +250,7 @@
           css:if-content="#app-contact-viewlet-elements" />
 
         <rules css:if-not-content="#portal-column-one">
-            <drop css:theme="#app-sidebar" />
+            <drop css:theme="#app-content-aside" />
             <replace css:content-children="#content"
                      css:theme-children="#content"
             />
@@ -260,7 +260,7 @@
                 <xsl:attribute name="class">app-content-main app-content-main-sm</xsl:attribute>
             </before>
             <replace css:content-children="#portal-column-one > *"
-                     css:theme-children="#app-sidebar" />
+                     css:theme-children="#app-content-aside" />
             <replace css:content-children="#content"
                      css:theme-children="#content"
             />
