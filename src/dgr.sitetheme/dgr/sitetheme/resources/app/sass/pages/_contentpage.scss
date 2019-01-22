@@ -103,6 +103,8 @@
 
 .app-page-block {
   @include make-row();
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .app-page-block-content-1 {

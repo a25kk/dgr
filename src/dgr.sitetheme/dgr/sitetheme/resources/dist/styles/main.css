@@ -16087,6 +16087,8 @@ fieldset[disabled] a.button {
       flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .app-page-block-content-1 {
