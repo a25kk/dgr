@@ -16089,54 +16089,172 @@ fieldset[disabled] a.button {
   margin-left: -15px;
 }
 
-.app-page-block-content {
+.app-page-block-content-1 {
   -ms-flex: 0 0 100%;
       flex: 0 0 100%;
   max-width: 100%;
 }
 
 @media (min-width: 576px) {
-  .app-page-block-content {
-    -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-    max-width: 50%;
-    padding: 1rem;
+  .app-page-block-content-1 {
+    -ms-flex: 0 0 8.3333333333%;
+        flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
   }
 }
 
-.app-page-block-3 {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  padding: 0 1rem 1rem 1rem;
+.app-page-block-content-2 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-2 {
+    -ms-flex: 0 0 16.6666666667%;
+        flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
 }
 
 .app-page-block-content-3 {
   -ms-flex: 0 0 100%;
       flex: 0 0 100%;
   max-width: 100%;
-  background: #fff;
-  padding: 1rem;
-}
-
-.app-page-block-content-3 h3 {
-  font-size: 1rem;
-}
-
-.app-page-block-content-3 ul {
-  background: #666666;
-  padding: 1rem;
-  list-style: none;
 }
 
 @media (min-width: 576px) {
   .app-page-block-content-3 {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.app-page-block-content-4 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-4 {
     -ms-flex: 0 0 33.3333333333%;
         flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
+  }
+}
+
+.app-page-block-content-5 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-5 {
+    -ms-flex: 0 0 41.6666666667%;
+        flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+}
+
+.app-page-block-content-6 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-6 {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.app-page-block-content-7 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-7 {
+    -ms-flex: 0 0 58.3333333333%;
+        flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+}
+
+.app-page-block-content-8 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-8 {
+    -ms-flex: 0 0 66.6666666667%;
+        flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+}
+
+.app-page-block-content-9 {
+  padding: 1rem;
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-9 {
+    -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+.app-page-block-content-10 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-10 {
+    -ms-flex: 0 0 83.3333333333%;
+        flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+}
+
+.app-page-block-content-11 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-11 {
+    -ms-flex: 0 0 91.6666666667%;
+        flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+}
+
+.app-page-block-content-12 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .app-page-block-content-12 {
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -16144,16 +16262,6 @@ fieldset[disabled] a.button {
   background: #95cc6e;
   border-color: #95cc6e !important;
   color: #fff !important;
-}
-
-.btn-drz {
-  background: #95cc6e;
-  border-color: #95cc6e !important;
-  color: #fff !important;
-}
-
-.btn-drz, .btn-drz:active, .btn-drz.active {
-  background: #95cc6e !important;
 }
 
 .app-img {
@@ -16165,22 +16273,6 @@ fieldset[disabled] a.button {
 }
 
 .embed-responsive, .app-page-embed {
-  margin-bottom: 1rem;
-}
-
-.info {
-  background: #efefef;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.info h3 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-
-.project-gallery-item {
   margin-bottom: 1rem;
 }
 

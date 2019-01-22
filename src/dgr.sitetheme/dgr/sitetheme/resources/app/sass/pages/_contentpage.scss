@@ -105,35 +105,88 @@
   @include make-row();
 }
 
-.app-page-block-content {
+.app-page-block-content-1 {
   @include make-col(12);
   @include media-breakpoint-up(sm) {
-    @include make-col(6);
-    padding: 1rem;
+    @include make-col(1);
   }
 }
 
-.app-page-block-3 {
-  @include make-row();
-  padding: 0 $spacer $spacer $spacer;
+.app-page-block-content-2 {
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(2);
+  }
 }
 
 .app-page-block-content-3 {
   @include make-col(12);
-  background: #fff;
-    padding: $spacer;
+  @include media-breakpoint-up(sm) {
+    @include make-col(3);
+  }
+}
 
-    h3 {
-      font-size: 1rem;
-    }
-
-    ul {
-      background: $app-gray;
-      padding: $spacer;
-      list-style: none;
-    }
+.app-page-block-content-4 {
+  @include make-col(12);
   @include media-breakpoint-up(sm) {
     @include make-col(4);
+  }
+}
+
+.app-page-block-content-5 {
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(5);
+  }
+}
+
+.app-page-block-content-6 {
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+  }
+}
+
+.app-page-block-content-7 {
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(7);
+  }
+}
+
+.app-page-block-content-8 {
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(8);
+  }
+}
+
+.app-page-block-content-9 {
+  padding: 1rem;
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(9);
+  }
+}
+
+.app-page-block-content-10 {
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(10);
+  }
+}
+
+.app-page-block-content-11 {
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(11);
+  }
+}
+
+.app-page-block-content-12 {
+  @include make-col(12);
+  @include media-breakpoint-up(sm) {
+    @include make-col(12);
   }
 }
 
@@ -142,18 +195,6 @@
   border-color: $app-secondary !important;
   color: #fff !important;
 }
-
-.btn-drz {
-  background: $app-secondary;
-  border-color: $app-secondary !important;
-  color: #fff !important;
-  &,
-  &:active,
-  &.active {
-      background: $app-secondary !important;
-    }
-}
-
 
 //
 // Content specific image and media styles
@@ -185,21 +226,5 @@
 // Should be replaced with the more generic
 // .app-page-embed class
 .embed-responsive {
-  margin-bottom: 1rem;
-}
-
-.info {
-  background: $app-gray-light;
-  padding: 1rem;
-  margin-bottom: 1rem;
-
-  h3 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-bottom: 0;
-  }
-}
-
-.project-gallery-item {
   margin-bottom: 1rem;
 }
