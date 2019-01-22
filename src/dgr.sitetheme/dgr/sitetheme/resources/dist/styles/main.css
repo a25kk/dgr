@@ -16060,6 +16060,12 @@ fieldset[disabled] a.button {
   list-style-position: inside;
 }
 
+.app-page-text li:before,
+#parent-fieldname-text li:before {
+  content: "• ";
+  display: inline;
+}
+
 .app-page-text a,
 #parent-fieldname-text a {
   font-weight: 500;
