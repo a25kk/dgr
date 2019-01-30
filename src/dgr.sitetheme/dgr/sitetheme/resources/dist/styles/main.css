@@ -13988,8 +13988,6 @@ iframe {
 }
 
 .app-footer-content {
-  background: url(../assets/img/footer.jpg) no-repeat 0 50%;
-  background-size: cover;
   color: #666666;
   font-size: 0.875rem;
   font-weight: 300;
