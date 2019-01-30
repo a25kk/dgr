@@ -16,13 +16,15 @@
             </aside>
             <article class="app-content-main" id="app-content-main">
                 {{ content }}
-                {% include components/frontpage-cards.html %}
             </article>
         </section>
     </main>
 
     {% include layout/footer.html %}
     {% include base/javascript.html %}
+    <div>
+        {% include base/piwik.html %}
+    </div>
   </body>
 </html>
 
